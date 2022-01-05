@@ -1,0 +1,161 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #242424;
+    padding: 3em 0;
+}
+
+footer .informacionFooter{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+footer .informacionFooter img{
+    box-sizing: border-box;
+    width: 70%;
+    padding: 1em;
+    height: auto;
+    margin: auto;
+}
+
+footer .informacionFooter p{
+    font-size: 1.2em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+footer .informacionFooter .redesSociales{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .informacionFooter .redesSociales a{
+    width: 20%;
+    height: auto;
+}
+
+footer .informacionFooter .redesSociales a img{
+    width: 100%;
+    height: auto;
+}
+
+footer .formularioFooter{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .formularioFooter .informacionMail h4,
+footer .formularioFooter .informacionMail p{
+    color: #FFFFFF;
+    text-align: center;
+}
+
+footer .formularioFooter .informacionMail h4{
+    font-size: 1.3em;
+}
+
+footer .formularioFooter .informacionMail p{
+    font-size: 1.2em;
+}
+
+footer .formularioFooter form{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .formularioFooter form input[type=text],
+footer .formularioFooter form input[type=email],
+footer .formularioFooter form textarea{
+    font-size: 0.8em;
+    color: #FFFFFF;
+    background: none;
+    border: none;
+    border-bottom: solid 2px #FFFFFF; 
+    margin: 2%;
+}
+
+footer .formularioFooter form input[type=text]:focus,
+footer .formularioFooter form input[type=email]:focus,
+footer .formularioFooter form textarea:focus{
+    outline: none;
+}
+
+footer .formularioFooter form input[type=text]::placeholder,
+footer .formularioFooter form input[type=email]::placeholder,
+footer .formularioFooter form textarea::placeholder{
+    color: #FFFFFF;
+    
+}
+
+footer .formularioFooter form textarea{
+    max-width: 96%;
+    min-width: 96%;
+    max-height: 100px;
+    min-height: 50px;
+}
+
+footer .formularioFooter form .btnFormulario{
+    font-size: 1em;
+    background-color: #F25D27;
+    border: solid 1px #F25D27;
+    color: #FFFFFF;
+    margin: auto;
+    padding: 0.2em 1em;
+    transition-duration: 0.4s;
+}
+
+footer .formularioFooter form .btnFormulario:hover{
+    background: none;
+    transition-duration: 0.4s;
+    border: solid 1px #FFFFFF;
+}
+
+@media (max-width: 1200px){
+    footer .informacionFooter .redesSociales a{
+        width: 25%;
+    }
+}
+
+@media (max-width: 992px){
+
+    footer .informacionFooter{
+        width: 50%;
+    }
+
+    footer .formularioFooter{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    footer .informacionFooter{
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px){
+    footer .informacionFooter{
+        width: 90%;
+    }
+
+    footer .informacionFooter img{
+        width: 90%;
+    }
+
+    footer .informacionFooter p{
+        font-size: 0.9em;
+    }
+
+    footer .informacionFooter .redesSociales a{
+        width: 30%;
+        height: auto;
+    }
+}

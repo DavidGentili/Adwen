@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2a1ee6f5dc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/modelo-con-fondo.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/footer-alternativo.css">
+    <title>Nosotros</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="brand">
+                <a href="./"><img src="./img/adwen-blanco.png" alt=""></a>
+            </div>
+
+            <div class="navMenu" id="navMenu">
+                <div class="menuHeader">
+                    <h4>MENU</h4>
+                    <button id="btnOpenMenu"><i class="fas fa-times"></i></button>
+                </div>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Trabajos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <button id="btnCloseMenu"><i class="fas fa-bars"></i></button>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="infoDeContacto">
+            <h3>CONTACTO</h3>
+            <h4>Mar del Plata, Buenos Aires, Argentina</h4>
+            <h4>adwenmdpobrasyservicios@gmail.com</adwenmdpobrasyservicios></h4>
+        </div>
+        
+        <div class="formulario">
+            <h3>FORMULARIO</h3>
+            <form action="" method="POST">
+                <input class="text" type="text" name="name" id="name" placeholder="Nombre" required>
+                <input class="text" type="email" name="email" id="email" placeholder="Mail" required>
+                <textarea class="text" name="message" id="message" placeholder="Mensaje"></textarea>
+                <input type="hidden" name="action" value="process_form">
+                <input class="btnFormulario" type="submit" name="submit" value="Enviar"> 
+        
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <img src="img/w-blanca.png" alt="Adwen Obras y Servicios - Mar del Plata">
+        <div class="redesSociales">
+            <a href="#"><i class="fab fa-facebook-f facebook"></i></i></a>
+            <a href="#"><i class="fab fa-instagram instagram"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

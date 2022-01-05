@@ -1,0 +1,148 @@
+/* body{
+    background-color: #022859;
+} */
+
+header{
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header nav{
+    height: 100%;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .brand{
+    width: 30%;
+    height: auto;
+}
+
+header nav .brand img{
+    width: 100%;
+    height: auto;
+}
+
+.navMenu{
+    transition-duration: .7s;
+}
+
+.menuHeader{
+    display: none;
+}
+
+.menuHeader h4{
+    color: #F25D27;
+    font-size: 1.3em;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+.menuHeader button{
+    border: none;
+    background: none;
+    color: #FFFFFF;
+    font-size: 1.3em;
+}
+
+header nav ul{
+    display: flex;
+    padding-left: 0;
+}
+
+header nav ul li{
+    list-style: none;
+    padding: 0 10px;
+}
+
+header nav ul li a{
+    font-size: 1.1em;
+    font-weight: 700;
+    text-decoration: none;
+    color: #FFFFFF;
+    transition-duration: 0.4s;
+
+}
+
+header nav ul li a:hover{
+    color: #F25D27;
+    border-bottom: solid 1px #F25D27;
+    transition-duration: 0.4s;
+}
+
+header nav > button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.3em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10%;
+    color: #FFFFFF;
+}
+
+@media (max-width: 992px){
+    header{
+        height: 100vh;
+    }
+
+    header nav{
+        justify-content: center;
+    }
+
+    header nav .brand{
+        width: 40%;
+    }
+
+    .navMenu{
+        height: 100vh;
+        width: 50vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #242424;
+        transform: translateX(-100%);
+        
+    }
+    .menuHeader{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 10%;
+        background-color: #000000;
+    }
+
+    header nav ul{
+        flex-direction: column;
+        padding: 30px 10%;
+    }
+
+    header nav ul li{
+        margin: 10px 0;
+    }
+
+    header nav > button{
+        display: initial;
+    }
+}
+
+@media (max-width: 768px){
+    header nav .brand{
+        width: 50%;
+    }
+
+    .navMenu{
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px){
+    header nav .brand{
+        width: 70%;
+    }
+}

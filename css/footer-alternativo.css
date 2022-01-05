@@ -1,0 +1,70 @@
+body{
+    background-color: #022859;    
+}
+
+/*--------------- Fotter ---------------*/
+footer{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer img{
+    width: 25%;
+    margin: 1em auto;
+}
+
+footer .redesSociales{
+    display: flex;
+    margin: 0 auto 1em auto;
+}
+
+footer .redesSociales a{
+    text-decoration: none;
+}
+
+footer .redesSociales i{
+    margin: 0 0.5em;
+}
+
+footer .redesSociales a .facebook{
+    font-size: 2.5em;
+    color: #FFFFFF;
+    transition-duration: 0.3s;
+}
+
+footer .redesSociales a .instagram{
+    font-size: 2.5em;
+    color: #FFFFFF;
+    transition-duration: 0.3s;
+}
+
+footer .redesSociales a:hover .facebook{
+    color: #F25D27;
+    transition-duration: 0.6s;
+}
+
+footer .redesSociales a:hover .instagram{
+    color: #f25d27;
+    background: none;
+    transition-duration: 0.6s;
+}
+
+@media (max-width: 992px){
+    footer img{
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px){
+    footer img{
+        width: 40%;
+    }
+}
+
+@media (max-width: 576px){
+    footer img{
+        width: 50%;
+    }
+}

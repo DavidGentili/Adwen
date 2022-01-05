@@ -1,0 +1,37 @@
+/*---------------Colores---------------*/
+/*
+Azul #022859
+Naranja #F25D27
+Negro #242424
+Blanco 1 #F1F1F1
+Blanco 2 #FFFFFF
+*/
+
+/*---------------Breakpoint---------------*/
+/*
+Movil < 576px
+Tablet < 768px
+Tablet < 992px
+Escritorio > 992px
+*/
+
+
+textarea,
+*{
+    font-family: 'Segoe UI', sans-serif, Helvetica, Arial;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
+button:active,
+button:focus{
+    outline: none;
+}

@@ -1,0 +1,134 @@
+.principal{
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.principal img{
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+
+.principal h3{
+    margin: 1em auto;
+    color: #FFFFFF;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.base{
+    background-color: #F1F1F1;
+    padding: 20vh 0 0 0;
+    box-shadow: 0 -10px 20px #24242430;
+    z-index: 2;
+}
+
+.infoPrincipal{
+    width: 80vw;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    padding: 5%;
+    box-sizing: content-box;
+    box-shadow: 10px -10px 5px #24242418;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.trabajo{
+    position: relative;
+    width: 30%;
+    display: flex;
+    overflow: hidden;
+    margin: 1em 0;
+    transition-duration: .7s;
+    transition-timing-function: ease-in-out;
+}
+
+.trabajo img{
+    width: 100%;
+    height: auto;
+    transition-duration: .7s;
+    transition-timing-function: ease-in-out;
+}
+
+.trabajo .filtro{
+    width: 100%;
+    height: 100%;
+    background-color: #02285980;
+    transition-duration: 0.7s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.trabajo a{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    font-size: 1.3em;
+    font-weight: 600;
+    transition-duration: 0.5s;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+.trabajo:hover img,
+.trabajo:active img,
+.trabajo:focus img{
+    transform: scale(1.2);
+    transition-duration: .7s;
+    transition-timing-function: ease-in-out;
+}
+
+.trabajo:hover{
+    box-shadow: 10px 10px 10px #24242420;
+    transition-duration: .7s;
+    transition-timing-function: ease-in-out;
+}
+
+.trabajo:hover a{
+    font-size: 1.5em;
+    text-decoration: underline;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+
+
+
+@media(max-width: 992px){
+    .trabajo{
+        width: 40%;
+    }
+
+}
+
+@media(max-width: 768px){
+    .trabajo{
+        width: 70%;
+    }
+}
+
+@media(max-width: 576px){
+    .trabajo{
+        width: 90%;
+    }
+
+    .trabajo a{
+        font-size: 1em;
+    }
+
+    .trabajo:hover a{
+        font-size: 1.1em;
+    }
+}
+
+@media(max-width: 360px){
+    
+}

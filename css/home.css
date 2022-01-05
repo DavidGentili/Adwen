@@ -1,0 +1,421 @@
+/*---------------principal---------------*/
+.principal{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+
+.principal img{
+    width: 100%;
+    height: auto;
+}
+
+
+/*---------------Nosotros---------------*/
+.nosotros{
+    padding: 7% 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.nosotros .infoGeneral{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nosotros .infoGeneral h3{
+    color: #F25D27;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.nosotros .infoGeneral p{
+    margin: 3em 0;
+    text-align: center;
+}
+
+
+.nosotros .atributos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.nosotros .atributo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+    text-align: center;
+}
+
+.nosotros .atributos .atributo img{
+    padding: 10px 10px;
+    width: 25%;
+    height: auto;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+}
+
+.nosotros .atributos .atributo h4{
+    color: #F25D27;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+
+/*---------------Servicios---------------*/
+.servicios{
+    background-color: #242424;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15vh;
+}
+
+.servicios .tituloServicios{
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+.servicios .tituloServicios h3{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0.3em auto;
+}
+
+.servicios .todosLosServicios{
+    display: flex;
+}
+
+
+.servicios .todosLosServicios .servicioIndividual{
+    display: flex;
+    position: relative;
+    width: 33.33%;
+    overflow: hidden;
+}
+
+.servicios .todosLosServicios .servicioIndividual img{
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.servicios .todosLosServicios .servicioIndividual .filtro{
+    width: 100%;
+    height: 100%;
+    background-color: #02285980;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+}
+
+.servicios .todosLosServicios .servicioIndividual .hover{
+    width: 100%;
+    height: 100%;
+    background-color: #F25D27E0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transform: translateY(100%);
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+}
+
+
+.servicios .todosLosServicios .servicioIndividual a{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    font-weight: 600;
+    z-index: 3;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+}
+
+.servicios .todosLosServicios .servicioIndividual:hover .filtro{
+    background-color: #02285900;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+}
+
+.servicios .todosLosServicios .servicioIndividual:hover .hover{
+    transform: translateY(0);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.servicios .todosLosServicios .servicioIndividual:hover a{
+    font-size: 1.5em;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+}
+
+.servicios .todosLosServicios .servicioIndividual a:hover{
+    text-decoration: underline;
+    transition-duration: 0.4;
+    transition-timing-function: ease-in-out;
+}
+
+/*---------------Trabajos---------------*/
+
+.trabajos .tituloTrabajos{
+    display: none;
+}
+
+.trabajos .todosLosTrabajos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trabajos .todosLosTrabajos .trabajoIndividual{
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.trabajos .todosLosTrabajos .trabajoIndividual img{
+    width: 100%;
+    height: auto;
+}
+
+.trabajos .todosLosTrabajos .trabajoIndividual .filtro{
+    width: 100%;
+    height: 100%;
+    background-color: #02285980;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+}
+
+.trabajos .todosLosTrabajos .trabajoIndividual .informacionDelTrabajo{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: flex-end;
+    z-index: 3;
+    color: #FFFFFF;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+}
+
+.trabajos .todosLosTrabajos .trabajoIndividual .informacionDelTrabajo p{
+    font-size: 6em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.trabajos .todosLosTrabajos .trabajoIndividual .informacionDelTrabajo .linea{
+    background-color: #FFFFFF;
+    width: 5px;
+    height: 14em;
+    margin: 1em;
+}
+
+.trabajos .todosLosTrabajos .trabajoIndividual .informacionDelTrabajo a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.trabajos .todosLosTrabajos .trabajoIndividual .f-hover{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F25D27E0;
+    z-index: 2;
+    transform: translateY(100%);
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+}
+
+.trabajos .todosLosTrabajos .trabajoIndividual .f-hover a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 3.5em;
+    font-weight: 600;
+    margin: 1em;
+}
+
+.trabajos .todosLosTrabajos .trabajoIndividual .f-hover a:hover{
+    text-decoration: underline;
+}
+
+.trabajos .todosLosTrabajos .trabajoIndividual:hover .filtro{
+    background: none;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+}
+
+.trabajos .todosLosTrabajos .trabajoIndividual:hover .informacionDelTrabajo{
+    transform: translateY(100%);
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+}
+
+.trabajos .todosLosTrabajos .trabajoIndividual:hover .f-hover{
+    transform: translateY(0);
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+}
+
+.trabajos .masTrabajos{
+    margin: 3em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.trabajos .masTrabajos a{
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #F25D27;
+    padding: 0.7em 1.5em;
+    border: solid 2px #F25D27;
+    box-sizing: border-box;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.trabajos .masTrabajos a:hover,
+.trabajos .masTrabajos a:active,
+.trabajos .masTrabajos a:focus{
+    background: none;
+    color: #F25D27;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+
+@media (max-width: 992px) {
+    .principal img{
+        height: 100vh;
+        width: auto;
+    }
+
+    .nosotros .atributos{
+        justify-content: center;
+    }
+
+    .nosotros .atributos .atributo{
+        width: 80%;
+        margin: 3em 0;       
+    }
+
+    .servicios{
+        background: none;
+    }
+
+    .servicios .tituloServicios{
+        background-color: #242424;
+    }
+
+    .servicios .todosLosServicios{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .servicios .todosLosServicios .servicioIndividual{
+        width: 70%;
+        margin: 1em auto;
+    }
+
+    .trabajos .tituloTrabajos{
+        display: flex;
+        justify-content: center;
+        background-color: #242424;
+        margin: 1.5em 0;
+    }
+
+    .trabajos .tituloTrabajos h3{
+        font-size: 1.5em;
+        font-weight: 700;
+        color: #FFFFFF;
+        margin: 0.3em auto;
+    }
+
+    .trabajos .todosLosTrabajos .trabajoIndividual{
+        width: 80%;
+        margin: 2em auto;
+    }
+
+    .trabajos .todosLosTrabajos .trabajoIndividual .informacionDelTrabajo p,
+    .trabajos .todosLosTrabajos .trabajoIndividual .informacionDelTrabajo .linea{
+        display: none;
+    }
+
+    .trabajos .todosLosTrabajos .trabajoIndividual .f-hover a{
+        font-size: 2.5em;
+    }
+
+
+}
+
+
+@media (max-width: 768px){
+    .trabajos .todosLosTrabajos .trabajoIndividual .informacionDelTrabajo a{
+        font-size: 2em;
+    }
+
+    .trabajos .todosLosTrabajos .trabajoIndividual .f-hover a{
+        font-size: 2em;
+    }
+    
+}
+
+
+@media (max-width: 576px){
+
+    .nosotros .infoGeneral h3{
+        font-size: 1.9em;
+    }
+
+    .nosotros .atributos .atributo{
+        width: 100%;
+    }
+
+    .nosotros .atributos .atributo img{
+        width: 40%;
+    }
+
+    .servicios .todosLosServicios .servicioIndividual{
+        width: 90%;
+    }
+
+    .trabajos .todosLosTrabajos .trabajoIndividual{
+        width: 90%;
+    }
+
+    .trabajos .todosLosTrabajos .trabajoIndividual .informacionDelTrabajo a{
+        font-size: 1.5em;
+    }
+
+    .trabajos .todosLosTrabajos .trabajoIndividual .f-hover a{
+        font-size: 1.5em;
+    }
+}

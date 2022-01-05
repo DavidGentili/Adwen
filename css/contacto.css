@@ -1,0 +1,129 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.infoDeContacto{
+    width: 45%;
+}
+
+.infoDeContacto h3{
+    text-align: center;
+    color: #f25d27;
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+.infoDeContacto h4{
+    margin: 2em 0;
+    text-align: start;
+    font-size: 1.1em;
+    color: #FFFFFF;
+}
+
+.formulario{
+    width: 45%;
+}
+
+.formulario h3{
+    text-align: center;
+    color: #f25d27;
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario form input[type=text],
+.formulario form input[type=email],
+.formulario form textarea{
+    font-size: 0.8em;
+    color: #FFFFFF;
+    background: none;
+    border: none;
+    border-bottom: solid 2px #FFFFFF; 
+    margin: 2%;
+}
+
+.formulario form input[type=text]:focus,
+.formulario form input[type=email]:focus,
+.formulario form textarea:focus{
+    outline: none;
+}
+
+.formulario form input[type=text]::placeholder,
+.formulario form input[type=email]::placeholder,
+.formulario form textarea::placeholder{
+    color: #FFFFFF;
+}
+
+.formulario form textarea{
+    max-width: 96%;
+    min-width: 96%;
+    max-height: 100px;
+    min-height: 50px;
+}
+
+.formulario form .btnFormulario{
+    font-size: 1em;
+    background-color: #F25D27;
+    border: solid 1px #F25D27;
+    color: #FFFFFF;
+    margin: 2em auto;
+    padding: 0.2em 1em;
+    transition-duration: 0.4s;
+}
+
+.formulario form .btnFormulario:hover{
+    background: none;
+    transition-duration: 0.4s;
+    border: solid 1px #FFFFFF;
+}
+
+@media (max-width: 992px){
+    .infoDeContacto{
+        width: 60%;
+    }
+
+    .infoDeContacto h4{
+        text-align: center;
+    }
+
+    .formulario{
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px){
+    .infoDeContacto{
+        width: 80%;
+    }
+
+    .formulario{
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px){
+    .infoDeContacto{
+        width: 95%;
+    }
+
+    .infoDeContacto h4{
+        font-size: 1em;
+    }
+
+    .formulario{
+        width: 95%;
+    }
+}
+
+@media (max-width: 400px){
+    .infoDeContacto h4{
+        font-size: 0.8em;
+    }
+}

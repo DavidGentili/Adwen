@@ -1,0 +1,98 @@
+/*---------------Contenido Principal---------------*/
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infoGeneral{
+    color: #FFFFFF;
+    margin-bottom: 1.5em;
+}
+
+.infoGeneral h3,
+.infoGeneral p{
+    text-align: center;
+}
+
+.infoGeneral h3{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.infoGeneral p{
+    font-size: 1.2em;
+}
+
+.atributos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.atributo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+    text-align: center;
+}
+
+.atributos .atributo img{
+    padding: 10px 10px;
+    width: 25%;
+    height: auto;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+}
+
+.atributos .atributo h4{
+    color: #FFFFFF;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.atributos .atributo p{
+    color: #FFFFFF;
+}
+
+@media (max-width: 992px){
+    .atributos{
+        justify-content: center;
+    }
+
+    .atributos .atributo{
+        width: 80%;
+        margin: 3em 0;       
+    }
+}
+
+@media (max-width: 768px){
+
+    .infoGeneral p{
+        text-align: justify;
+        font-size: 1em;
+    }
+
+    .atributos .atributos .tituloAtributo h4{
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 576px){
+    .infoGeneral h3{
+        font-size: 1.9em;
+    }
+
+    .atributos .atributo{
+        width: 100%;
+    }
+
+    .atributos .atributo img{
+        width: 40%;
+    }
+}
+
+

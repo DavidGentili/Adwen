@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2a1ee6f5dc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/trabajos.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="brand">
+                <a href="./"><img src="./img/adwen-blanco.png" alt=""></a>
+            </div>
+
+            <div class="navMenu" id="navMenu">
+                <div class="menuHeader">
+                    <h4>MENU</h4>
+                    <button id="btnOpenMenu"><i class="fas fa-times"></i></button>
+                </div>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Trabajos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <button id="btnCloseMenu"><i class="fas fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <section class="principal">
+        <img src="img/trabajos.jpg" alt="trabajo realizado">
+        <h3>NUESTROS TRABAJOS</h3>
+    </section>
+
+    <section class="base">
+        <div class="infoPrincipal">   
+            
+            <div class="trabajo">
+                <img src="img/trab-1.jpg" alt="">
+                <div class="filtro"></div>
+                <a href="#">Nombre del Trabajo</a>
+            </div>
+            <div class="trabajo">
+                <img src="img/trab-2.jpg" alt="">
+                <div class="filtro"></div>
+                <a href="#">Nombre del Trabajo</a>
+            </div>
+            <div class="trabajo">
+                <img src="img/trab-3.jpg" alt="">
+                <div class="filtro"></div>
+                <a href="#">Nombre del Trabajo</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="informacionFooter">
+            <img src="img/w-naranja.png" alt="Adwen Obras y Servicios - Mar del Plata">
+            <p>Mar del Plata, Buenos Aires, Argentina</p>
+            <div class="redesSociales">
+                <a href="#"><img src="./img/facebook.png" alt=""></a>
+                <a href="#"><img src="./img/instagram.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="formularioFooter">
+            
+            <div class="informacionMail">
+                <h4>CONTACTENOS</h4>
+                <p>adwenmdpobrasyservicios@gmail.com</p>
+            </div>
+
+            <form action="" method="POST">
+                <input class="text" type="text" name="name" id="name" placeholder="Nombre" required>
+                <input class="text" type="email" name="email" id="email" placeholder="Mail" required>
+                <textarea class="text" name="message" id="message" placeholder="Mensaje" required></textarea>
+                <input type="hidden" name="action" value="process_form">
+                <input class="btnFormulario" type="submit" name="submit" value="Enviar"> 
+
+            </form>
+        
+        </div>
+
+    </footer>
+
+    <script src="js/nav.js"></script>
+
+</body>
+</html>
