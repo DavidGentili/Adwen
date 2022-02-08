@@ -33,29 +33,45 @@ const getData = () => {
     return correctName(name) && correctEmail(email) && correctMessage(message) ? {name, email, message} : undefined;
 }
 
-
+const clearInputs = () => {
+    document.getElementById('contactName').value = '';
+    document.getElementById('contactEmail').value = '';
+    document.getElementById('contactMessage').value = '';
+}
 
 const eventSendMail = (e) => {
     e.preventDefault()
     const data = getData();
     if(data)
-        sendMail(data,e.target[3]);
+        sendMail(data,e.target[3],e.target.lastElementChild);
 
 }
 
-const sendMail = (params, button) => {
-    button.disabled = true;
+const showLoadIcon = (button,loadIcon) => {
+    button.style.display = 'none';
+    loadIcon.style.display = 'flex';
+}
+
+const hiddenLoadIcon = (button, loadIcon) => {
+    button.style.display = 'flex';
+    loadIcon.style.display = 'none';
+}
+
+const sendMail = (params, button, loadIcon) => {
+    showLoadIcon(button,loadIcon);
     emailjs.send(serviceID,templateID,params,userID)
     .then((res) => {
-        if(res.status === 200)
+        if(res.status === 200){
             addNewMessage('El mensaje se envio con exito', 'successful');
+            clearInputs();
+        }
         else
             addNewMessage('Hubo un error al enviar el mensaje, por favor intenelo nuevamente', 'error');
-        button.disabled.false
+        hiddenLoadIcon(button,loadIcon);
     })
     .catch((e) => {
         addNewMessage('Hubo un error al enviar el mensaje, por favor intenelo nuevamente', 'error');
-        button.disabled.false
+        hiddenLoadIcon(button,loadIcon);
     })
 }
 

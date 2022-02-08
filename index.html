@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/2a1ee6f5dc.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/home.css">
@@ -36,6 +37,8 @@
             <button id="btnCloseMenu"><i class="fas fa-bars"></i></button>
         </nav>
     </header>
+
+    <div class="msg-panel" id="msg-panel"></div>
 
     <section class="principal">
         <img src="img/prin-home.jpg" alt="Imagen principal de Adwen Obras y Servicios - Mar del Plata">
@@ -177,7 +180,7 @@
                 <input type="email" id="contactEmail" placeholder="Mail" required>
                 <textarea id="contactMessage" placeholder="Mensaje"></textarea>
                 <button class="btnFormulario" type="submit" name="submit">Enviar</button> 
-        
+                <i class="fas fa-circle-notch"></i>
             </form>
         
         </div>

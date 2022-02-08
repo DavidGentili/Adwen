@@ -80,6 +80,7 @@ footer .formularioFooter form textarea{
     border: none;
     border-bottom: solid 2px #FFFFFF; 
     margin: 2%;
+    padding: 8px 2px;
 }
 
 footer .formularioFooter form input[type=text]:focus,
@@ -102,7 +103,7 @@ footer .formularioFooter form textarea{
     min-height: 50px;
 }
 
-footer .formularioFooter form .btnFormulario{
+footer .formularioFooter form button{
     font-size: 1em;
     background-color: #F25D27;
     border: solid 1px #F25D27;
@@ -112,10 +113,24 @@ footer .formularioFooter form .btnFormulario{
     transition-duration: 0.4s;
 }
 
-footer .formularioFooter form .btnFormulario:hover{
+footer .formularioFooter form button:hover{
     background: none;
     transition-duration: 0.4s;
     border: solid 1px #FFFFFF;
+}
+
+footer .formularioFooter form i{
+    color: #F25D27;
+    font-size: 1.4em;
+    margin: auto;
+    display: none;
+    animation: loadEffect 1.5s infinite linear;
+}
+
+@keyframes loadEffect {
+    form{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+
 }
 
 @media (max-width: 1200px){
