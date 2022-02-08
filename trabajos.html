@@ -83,20 +83,20 @@
                 <p>adwenmdpobrasyservicios@gmail.com</p>
             </div>
 
-            <form action="" method="POST">
-                <input class="text" type="text" name="name" id="name" placeholder="Nombre" required>
-                <input class="text" type="email" name="email" id="email" placeholder="Mail" required>
-                <textarea class="text" name="message" id="message" placeholder="Mensaje" required></textarea>
-                <input type="hidden" name="action" value="process_form">
-                <input class="btnFormulario" type="submit" name="submit" value="Enviar"> 
-
+            <form id="contactForm">
+                <input type="text" id="contactName" placeholder="Nombre" required>
+                <input type="email" id="contactEmail" placeholder="Mail" required>
+                <textarea id="contactMessage" placeholder="Mensaje"></textarea>
+                <button class="btnFormulario" type="submit" name="submit">Enviar</button> 
+            
             </form>
-        
+  
         </div>
 
     </footer>
 
     <script src="js/nav.js"></script>
+    <script src="./js/mailTo.js" type="module"></script>
 
 </body>
 </html>
